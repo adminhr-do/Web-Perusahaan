@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Class Approval | Citra Marine Services International</title>
+
+    <!-- CSS UTAMA -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- CSS KHUSUS CLASSIFICATION -->
+    <link rel="stylesheet" href="css/class.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- ICON -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="js/classification.js"></script>
+</head>
+
+<body>
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header class="navbar">
+<header class="navbar">
+    <div class="nav-container">
+
+        <a href="index.html#home" class="logo">
+            <img src="assets/logo.png" alt="Citra Marine">
+        </a>
+
+        <nav class="nav-menu">
+            <a href="index.html#home">HOME</a>
+
+            <a href="index.html#about">ABOUT</a>
+
+            <div class="nav-dropdown">
+                <a href="index.html#services" class="dropdown-toggle">
+                    SERVICES
+                </a>
+
+                <div class="dropdown-menu">
+                    <a href="co2.html">CO₂ SYSTEM</a>
+                    <a href="pmk.html">Fire Extinguisher</a>
+                    <a href="lifeboat.html">LIFEBOAT</a>
+                    <a href="liferaft.html">LIFERAFT</a>
+                </div>
+            </div>
+
+            <a href="index.html#contact">CONTACT</a>
+            <a href="class.html">CLASSIFICATION</a>
+        </nav>
+
+    </div>
+</header>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="classification-hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="classification-hero-content">
+
+        <span>
+            CLASSIFICATION & APPROVAL
+        </span>
+
+        <h1>
+            Our <strong>Class Approval</strong>
+        </h1>
+
+        <div class="hero-line">
+            <span></span>
+            <i></i>
+        </div>
+
+        <p>
+            PT. Citra Marine Services International is committed to
+            maintaining professional standards in marine safety services
+            and complying with applicable maritime requirements.
+        </p>
+
+        <div class="classification-search">
+        <i class="fas fa-search"></i>
+
+        <input
+            type="text"
+            id="classificationInput"
+            placeholder="Search classification society..."
+            autocomplete="off"
+            aria-label="Search classification society"
+            aria-controls="classificationResults"
+            aria-expanded="false"
+        >
+
+        <button
+            type="button"
+            id="clearClassification"
+            aria-label="Clear search"
+        >
+            <i class="fas fa-times"></i>
+        </button>
+
+        <!-- SEARCH RESULTS -->
+        <div
+            class="classification-results"
+            id="classificationResults"
+            role="listbox"
+        ></div>
+    </div>
+    <!-- SELECTED CLASSIFICATION -->
+    <div
+        class="selected-classification"
+        id="selectedClassification"
+        aria-live="polite"
+        hidden
+    >
+        <div class="selected-header">
+            <span class="selected-badge">
+                <i class="fas fa-check-circle"></i>
+                Selected Classification
+            </span>
+        </div>
+
+        <div class="selected-content">
+            <div class="selected-logo">
+                <img id="selectedLogo" src="" alt="">
+            </div>
+
+            <div class="selected-info">
+                <h3 id="selectedName"></h3>
+                <p id="selectedDescription"></p>
+                <a
+                    id="selectedWebsite"
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    hidden
+                >
+                    Visit Official Website
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+        </div>
+
+        <button
+            type="button"
+            id="changeClassification"
+            class="change-selection"
+        >
+            <i class="fas fa-exchange-alt"></i>
+            Change Selection
+        </button>
+    </div>
+
+    <p class="no-selection" id="noSelection">
+        Please search and select a classification society above.
+    </p>
+
+    </div>
+    
+
+</section>
+
+
+<!-- ================= CLASSIFICATION SEARCH =================
+
+<section class="classification-section" id="classification">
+
+    <div class="classification-heading">
+        <p class="section-label">CLASSIFICATION SOCIETY</p>
+        <h2>Approved By</h2>
+        <div class="title-line"></div>
+        <p class="section-description">
+            Search and select a classification society to view its details.
+        </p>
+    </div>
+
+    SEARCH BOX
+
+</section>
+
+================= END CLASSIFICATION SEARCH ================= -->
+
+
+
+
+<!-- =====================================================
+     CLASSIFICATION SOCIETY
+===================================================== -->
+
+<section class="society-section">
+
+        <div class="society-grid">
+
+
+            <!-- ABS -->
+
+            <a href="class/abs.html" class="society-card">
+
+                <div class="society-logo">
+                    <img src="assets/class/abs.jpg" alt="ABS">
+                </div>
+
+                <h3>
+                    American Bureau<br>
+                    of Shipping
+                </h3>
+
+                <span class="card-line"></span>
+
+            </a>
+
+
+
+            <!-- BKI -->
+
+
+            <a href="class/bki.html" class="society-card">
+
+                <div class="society-logo">
+                    <img src="assets/class/BKI.jpg" alt="BKI">
+                </div>
+
+                 <h3>
+                    Biro Klasifikasi<br>
+                    Indonesia
+                </h3>
+
+                <span class="card-line"></span>
+
+            </a>
+
+            <!-- BTKP -->
+
+            <a href="class/btkp.html" class="society-card">
+
+                <div class="society-logo">
+                    <img
+                        src="assets/class/btkp.png"
+                        alt="BTKP">
+                </div>
+
+                <h3>
+                    Balai Teknik<br>
+                    Keselamatan Pelayaran
+                </h3>
+
+                <span class="card-line"></span>
+
+            </a>
+
+
+
+            <!-- LR -->
+
+            <a href="class/loyd.html" class="society-card">
+
+                <div class="society-logo">
+                    <img
+                        src="assets/class/loyd.png"
+                        alt="Lloyd's Register">
+                </div>
+
+                <h3>
+                    Lloyd's Register
+                </h3>
+
+                <span class="card-line"></span>
+
+            </a>
+
+
+
+            <!-- RINA -->
+
+            <a href="class/rina.html" class="society-card">
+
+                <div class="society-logo">
+                    <img
+                        src="assets/class/RINA.jpg"
+                        alt="RINA">
+                </div>
+
+                <h3>
+                    Registro Italiano Navale
+                </h3>
+
+                <span class="card-line"></span>
+
+            </a>
+
+
+
+            <!-- CLASS NK -->
+
+            <a href="class/nk.html" class="society-card">
+
+                <div class="society-logo">
+
+                    <img
+                        src="assets/class/NK.jpg"
+                        alt="ClassNK">
+
+                </div>
+
+                <h3>
+                    Nippon Kaiji<br>
+                    Kyokai
+                </h3>
+
+                <span class="card-line"></span>
+
+            </a>
+
+
+
+
+            <!-- DNV -->
+
+            <a href="class/dnv.html" class="society-card">
+
+                <div class="society-logo">
+
+                    <img
+                        src="assets/class/DNV.jpg"
+                        alt="DNV">
+
+                </div>
+
+                <h3>
+                    Det Norske Veritas
+                </h3>
+
+                <span class="card-line"></span>
+
+            </a>
+
+
+
+            <!-- KR -->
+
+            <a href="class/kr.html" class="society-card">
+
+                <div class="society-logo">
+
+                    <img
+                        src="assets/class/kr.png"
+                        alt="Korean Register">
+
+                </div>
+
+                <h3>
+                    Korean Register
+                </h3>
+
+                <span class="card-line"></span>
+
+            </a>
+
+            
+            <!-- SCM -->
+
+            <a href="class/scm.html" class="society-card">
+
+                <div class="society-logo">
+
+                    <img
+                        src="assets/class/scm.jpg"
+                        alt="SHIPS CLASSIFICATION MALAYSIA">
+
+                </div>
+
+                <h3>
+                    Ships Classification Malaysia 
+                </h3>
+
+                <span class="card-line"></span>
+
+            </a>
+
+            
+            <!-- BV -->
+
+            <a href="class/bv.html" class="society-card">
+
+                <div class="society-logo">
+
+                    <img
+                        src="assets/class/BV.jpg"
+                        alt="BUREAU VERITAS">
+
+                </div>
+
+                <h3>
+                    Bureau Veritas
+                </h3>
+
+                <span class="card-line"></span>
+
+
+            </a>
+
+            
+            <!-- IRS -->
+
+            <a href="class/irs.html" class="society-card">
+
+                <div class="society-logo">
+
+                    <img
+                        src="assets/class/IRS.png"
+                        alt="INDIAN REGISTER OF SHIPPING">
+
+                </div>
+
+                <h3>
+                    Indian Register of Shipping
+                </h3>
+
+                <span class="card-line"></span>
+
+            </a>
+
+                        
+            <!-- PANAMA -->
+
+            <a href="class/PANAMA.html" class="society-card">
+
+                <div class="society-logo">
+
+                    <img
+                        src="assets/class/panama.jpeg"
+                        alt="FLAG PANAMA">
+
+                </div>
+
+                <h3>
+                    FLAG PANAMA
+                </h3>
+
+                <span class="card-line"></span>
+
+            </a>
+
+                        
+            <!-- LIBERIA -->
+
+            <a href="class/LIBERIA.html" class="society-card">
+
+                <div class="society-logo">
+
+                    <img
+                        src="assets/class/Liberia.jpeg"
+                        alt="FLAG LIBERIA">
+
+                </div>
+
+                <h3>
+                    Flag Liberia
+                </h3>
+
+                <span class="card-line"></span>
+
+            </a>
+                        
+            <!-- bahamas -->
+
+            <a href="class/bahamas.html" class="society-card">
+
+                <div class="society-logo">
+
+                    <img
+                        src="assets/class/bahamas.jpeg"
+                        alt="FLAG BAHAMAS">
+
+                </div>
+
+                <h3>
+                    Flag Bahamas
+                </h3>
+
+                <span class="card-line"></span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="main-footer">
+
+    <div class="footer-container">
+
+
+        <!-- COMPANY -->
+
+        <div class="footer-company">
+
+            <img
+                src="assets/logo.png"
+                alt="Citra Marine">
+
+            <p>
+                We are committed to providing the best marine
+                safety services with high standards of quality,
+                safety, and professionalism.
+            </p>
+
+             <!-- SOCIAL MEDIA -->
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/company/pt-citra-marine-service-international/" target="_blank" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a href="https://www.instagram.com/citramarine.official?stkn=MTJya2l6c2pyNnJjOQ%3D%3D&utm_source=qr" target="_blank" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+
+        </div>
+
+
+<!-- CONTACT -->
+<div class="footer-column">
+
+    <h3>Contact Us</h3>
+
+    <!-- PHONE -->
+    <div class="contact-item">
+        <a href="tel:+62778395063" class="contact-icon">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+
+        <div class="contact-info">
+            <a href="tel:+62778395063" class="contact-link">
+                +62 778395063
+            </a>
+        </div>
+    </div>
+
+    <!-- EMAIL -->
+    <div class="contact-item">
+        <a href="mailto:cs@citramarine.com" class="contact-icon">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+
+        <div class="contact-info">
+            <a href="mailto:cs@citramarine.com" class="contact-link">
+                cs@citramarine.com
+            </a>
+        </div>
+    </div>
+
+    <!-- WEBSITE -->
+    <div class="contact-item">
+        <a href="https://www.citramarine.com" 
+           class="contact-icon" 
+           target="_blank">
+            <i class="fa-solid fa-globe"></i>
+        </a>
+
+        <div class="contact-info">
+            <a href="https://www.citramarine.com" 
+               class="contact-link" 
+               target="_blank">
+                www.citramarine.com
+            </a>
+        </div>
+    </div>
+
+    <!-- LOCATION -->
+    <div class="contact-item">
+        <a href="https://maps.app.goo.gl/Eut5XRbJCS4bdPYD7" 
+           class="contact-icon" 
+           target="_blank">
+            <i class="fa-solid fa-location-dot"></i>
+        </a>
+
+        <div class="contact-info">
+            <a href="https://maps.app.goo.gl/Eut5XRbJCS4bdPYD7" 
+               class="contact-link" 
+               target="_blank">
+                Komp. Workshop Pasar SP Blok D No.3
+                Batu Aji - Batam, Indonesia
+            </a>
+        </div>
+    </div>
+
+</div>
+
+
+        <!-- QUICK LINKS -->
+
+        <div class="footer-column">
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <a href="index.html#home">
+                Home
+            </a>
+
+            <a href="index.html#services">
+                Services
+            </a>
+
+            <a href="index.html#about">
+                About
+            </a>
+
+            <a href="index.html#contact">
+                Contact
+            </a>
+
+            <a href="class.html" class="footer-active">
+                Classification
+            </a>
+
+        </div>
+
+
+
+        <!-- COMMITMENT -->
+
+        <div class="footer-column">
+
+            <h3>
+                Our Commitment
+            </h3>
+
+            <p>
+                We are committed to providing the best marine
+                safety services with high standards of quality,
+                safety, and professionalism.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="footer-bottom">
+
+        © 2026 PT. Citra Marine Services International.
+        All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>
