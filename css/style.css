@@ -1611,3 +1611,32 @@ footer {
         border-bottom: none;
     }
 }
+
+/* ===== SERVICES DROPDOWN ON MOBILE ===== */
+@media screen and (max-width: 768px) {
+    .nav-menu .nav-dropdown {
+        position: relative;
+    }
+
+    .nav-menu .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        min-width: 180px;
+        background: #031937;
+        z-index: 9999;
+    }
+
+    .nav-menu .nav-dropdown:hover .dropdown-menu,
+    .nav-menu .nav-dropdown:focus-within .dropdown-menu {
+        display: block;
+    }
+
+    .nav-menu .dropdown-menu a {
+        display: block;
+        padding: 12px 16px;
+        color: white;
+        white-space: nowrap;
+    }
+}
