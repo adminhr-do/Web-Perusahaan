@@ -23,51 +23,11 @@ a {
 }
 
 
-/* ================= NAVBAR ================= */
-
-.navbar {
-    height: 92px;
-
-    background: rgba(3, 25, 55, 0.97);
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    padding: 0 7%;
-
-    position: relative;
-    z-index: 10;
-}
-
-.logo img {
-    width: 150px;
-}
-
-.navbar nav {
-    display: flex;
-    gap: 35px;
-}
-
-.navbar nav a {
-    color: #ffffff;
-
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 1px;
-
-    transition: 0.3s;
-}
-
-.navbar nav a:hover {
-    color: #ffc800;
-}
-
-
 /* ================= HERO ================= */
 
 .service-hero {
-    min-height: 390px;
+    min-height: 420px;
+    padding-top: 110px;
 
     background:
         linear-gradient(
@@ -483,14 +443,6 @@ a {
 
 @media (max-width: 900px) {
 
-    .navbar {
-        padding: 0 5%;
-    }
-
-    .navbar nav {
-        gap: 18px;
-    }
-
     .liferaft-intro {
         gap: 40px;
     }
@@ -511,24 +463,9 @@ a {
 
 @media (max-width: 700px) {
 
-    .navbar {
-        height: auto;
-
-        padding: 20px;
-
-        flex-direction: column;
-
-        gap: 15px;
-    }
-
-    .navbar nav {
-        flex-wrap: wrap;
-
-        justify-content: center;
-    }
-
     .service-hero {
-        min-height: 320px;
+        min-height: 340px;
+        padding-top: 115px;
     }
 
     .hero-content h1 {
