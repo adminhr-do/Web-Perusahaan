@@ -60,36 +60,29 @@ img {
     justify-content: space-between;
 }
 
-/* FIX DROPDOWN SERVICES MOBILE */
+/* FIX SERVICES DROPDOWN MOBILE */
 @media screen and (max-width: 768px) {
 
     .nav-menu .nav-dropdown {
         position: relative;
     }
 
-    .nav-menu .nav-dropdown .dropdown-menu {
-        display: none;
+    .nav-menu .nav-dropdown.active > .dropdown-menu {
+        display: block !important;
         position: absolute;
         top: 100%;
         left: 0;
-        min-width: 200px;
-        flex-direction: column;
+        min-width: 210px;
         background: #031937;
-        z-index: 9999;
         padding: 8px 0;
-        border-radius: 0 0 8px 8px;
+        z-index: 99999;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
     }
 
-    .nav-menu .nav-dropdown.active .dropdown-menu {
-        display: flex !important;
-    }
-
-    .nav-menu .nav-dropdown .dropdown-menu a {
+    .nav-menu .dropdown-menu a {
         display: block;
-        width: 100%;
-        padding: 12px 15px;
-        color: white;
-        text-decoration: none;
+        padding: 12px 18px;
+        color: #ffffff;
         white-space: nowrap;
     }
 }
