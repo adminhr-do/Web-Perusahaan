@@ -60,7 +60,17 @@ img {
     justify-content: space-between;
 }
 
+@media (max-width: 768px) {
+    .nav-dropdown .dropdown-menu {
+        display: none;
+        position: static;
+        width: 100%;
+    }
 
+    .nav-dropdown.active .dropdown-menu {
+        display: block;
+    }
+}
 
 /* =========================
    LOGO
